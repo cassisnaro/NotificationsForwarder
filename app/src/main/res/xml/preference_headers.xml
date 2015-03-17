@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<preference-headers
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <header android:fragment="com.example.daniel.project.SettingsActivity$Prefs1Fragment"
+        android:title="Mail preferences"
+        android:summary="GMail credentials to use for sending emails." />
+
+
+
+</preference-headers>

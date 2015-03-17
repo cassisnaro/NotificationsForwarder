@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="30dp"
+    android:weightSum="1">
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:id="@+id/packageIcon"
+        android:layout_margin="5dp"
+        android:src="@drawable/ic_launcher"
+        android:nestedScrollingEnabled="false" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Large Text"
+        android:id="@+id/packageName"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="1.0"
+        android:layout_marginLeft="5dp" />
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/forwardActivated"
+        android:layout_weight="0.2"
+        android:focusable="false"
+        android:focusableInTouchMode="false"/>
+</LinearLayout>
