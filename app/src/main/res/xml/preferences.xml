@@ -7,11 +7,13 @@
 
         <EditTextPreference
             android:key="edittext_preference"
+            android:summary=""
             android:title="@string/title_username_preference"/>
 
         <EditTextPreference
             android:key="password_preference"
             android:title="@string/title_password_preference"
+            android:summary=""
             android:inputType="textPassword" />
 
     </PreferenceCategory>

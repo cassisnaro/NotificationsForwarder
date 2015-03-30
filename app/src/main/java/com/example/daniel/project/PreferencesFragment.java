@@ -78,7 +78,7 @@ public class PreferencesFragment extends Fragment implements LoaderManager.Loade
     }
 
     public PreferencesFragment() {
-        setHasOptionsMenu(true);
+        setHasOptionsMenu(false);
     }
 
 
@@ -105,7 +105,7 @@ public class PreferencesFragment extends Fragment implements LoaderManager.Loade
                 mPackageInfo = getArguments().getString(PreferencesActivity.PACKAGE_INFO);
             }
         }
-        setHasOptionsMenu(true);
+        setHasOptionsMenu(false);
         super.onCreate(savedInstanceState);
     }
 
@@ -188,8 +188,8 @@ public class PreferencesFragment extends Fragment implements LoaderManager.Loade
     public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
         menu.clear();
         // Inflate the menu; this adds items to the action bar if it is present.
-        inflater.inflate(R.menu.preferences, menu);
-        super.onCreateOptionsMenu(menu,inflater);
+        //inflater.inflate(R.menu.preferences, menu);
+        //super.onCreateOptionsMenu(menu,inflater);
 
         /*// Retrieve the share menu item
         MenuItem menuItem = menu.findItem(R.id.action_share);

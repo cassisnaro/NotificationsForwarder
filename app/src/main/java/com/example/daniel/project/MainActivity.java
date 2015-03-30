@@ -102,36 +102,7 @@ public class MainActivity  extends ActionBarActivity implements PackagesFragment
         // automatically handle clicks on the Home/Up button, so long
         // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
-        if (id == R.id.delete_packages) {
-            getApplicationContext().getContentResolver().delete(
-                    PackagesContract.PreferencesEntry.CONTENT_URI,
-                    null,
-                    null
-            );
-            getApplicationContext().getContentResolver().delete(
-                    PackagesContract.PackageEntry.CONTENT_URI_LIST,
-                    null,
-                    null
-            );
-            return true;
-        } else if (id == R.id.create_notifications) {
-            NotificationManager nManager = (NotificationManager) getSystemService(NOTIFICATION_SERVICE);
-            NotificationCompat.Builder ncomp = new NotificationCompat.Builder(this);
-            ncomp.setContentTitle("My Notification");
-            ncomp.setContentText("Notification Listener Service Example");
-            ncomp.setTicker("Notification Listener Service Example");
-            ncomp.setSmallIcon(R.drawable.ic_launcher);
-            ncomp.setAutoCancel(true);
-            nManager.notify((int)System.currentTimeMillis(),ncomp.build());
-            return true;
-        } else if (id == R.id.add_package) {
-            ContentValues packagesValues = new ContentValues();
-
-            packagesValues.put(PackagesContract.PackageEntry.COLUMN_PACKAGE_INFO, "com.bla.fr");
-            packagesValues.put(PackagesContract.PackageEntry.COLUMN_PACKAGE_ACTIVE, PackagesContract.PackageEntry.ACTIVE_STRING);
-
-            Uri packageUri = getApplicationContext().getContentResolver().insert(PackagesContract.PackageEntry.CONTENT_URI, packagesValues);
-        } else if (id == R.id.action_settings){
+        if (id == R.id.action_settings){
             startActivity(new Intent(this, SettingsActivity.class));
         }
         return super.onOptionsItemSelected(item);

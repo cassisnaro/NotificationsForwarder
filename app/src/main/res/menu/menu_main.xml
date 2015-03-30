@@ -6,13 +6,4 @@ tools:context=".MainActivity" >
         android:title="@string/action_settings"
         android:orderInCategory="100"
         app:showAsAction="never" />
-    <item android:id="@+id/delete_packages"
-        android:title="@string/delete_packages"
-        app:showAsAction="never" />
-    <item android:id="@+id/create_notifications"
-        android:title="@string/create_notifications"
-        app:showAsAction="never" />
-    <item android:id="@+id/add_package"
-        android:title="@string/add_package"
-        app:showAsAction="never" />
 </menu>
